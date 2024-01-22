@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index_style.css">
+    <script src="./scripts/index_script.js" defer></script>
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+    <header>
+    <!-- nav bar start -->
+    <nav class="navbar">
+        <a href="./index.html"><img src="./img/hooli_ugle_titel.svg" alt="HOOLI" class="logo"></a>
+        <ul class="nav-items">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./product.html" class="nav-link">Products</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+        </ul>
+    </nav>
+    <!-- nav bar end -->
+
+
+    <!-- burger menu start -->
+    <div class="burgerbar">
+        <a href="./index.html"><img src="./img/hooli_ugle_titel.svg" alt="HOOLI" class="burger-logo"></a>
+        <div class="menu-toggle">
+            <div class="burger-icon"></div>
+            <div class="burger-icon"></div>
+            <div class="burger-icon"></div>
+        </div>
+    </div>
+    
+    <nav class="menu">
+      <div class="burger-menu">
+          <ul class="burger-items">
+            <li><a class="burger-link" href="./index.html">Home</a></li>
+            <li><a class="burger-link" href="./product.html">Products</a></li>
+            <li><a class="burger-link" href="./about.html">About</a></li>
+          </ul>
+      </div>
+    </nav>
+    <!-- burger menu end -->
+</header>
+
+
+<div class="slider" id="slider01">
+    <div class="slider-slides">
+        <img class="slider-slide" src="" alt="">
+    </div>
+    <div class="slider-buttons">
+        <button class="previous">Tilbage</button>
+        <button class="next">Frem</button>
+    </div>
+</div>
+
+<!--ROLLING TEXT-->
+<div class="slide-in">
+    
+    <div class="rolling-txt">
+        <p class="txt-heading">Velkommen til julemagi for dine læber!</p><br>
+        <p class="txt-txt">Giv dine læber en smag af julens glæde og latter med Huulis unikke kollektion af sjove jule læbepomader. Vi fejrer den festlige sæson med et smil og et strejf af sjov, og vores læbeprodukter er designet til at sprede glæde og julestemning med hvert påføring.<br><br>Udforsk vores spændende udvalg, fra pebernød-kys til flæskestegsdrømme, og lad Huuli være din følgesvend i denne sæson af glæde. Hos os handler det ikke kun om at pleje læberne, men også om at tilføje et strejf af sjov til din julestemning.<br>Velkommen til Huuli - hvor skønhed møder latter, og hvor julemagien trives i hvert kys!</p><br> <p class="txt-txt">Find vores produkter <a class="txt-txt" href="./product.html">her</a> </p>
+        </div>
+        
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const slideInElement = document.querySelector(".slide-in");
+        slideInElement.classList.add("active");
+        });
+        </script>
+
+</div>
+<!--END ROLLIG TEXT-->
+
+
+
+
+
+
+    <section class="produkter">
+        <div class="produkt">
+          <img class="produkt-img" src="img/pebernoed_produkt.jpg" alt="Julemagi Læbepromade 1">
+          <div class="redbox"><p>Oplev en magisk smagsrejse med vores læbepomade, der er inspireret af den traditionelle pebernød. Den bløde og nærende formel indhyller dine læber i en forførende kombination af krydret varme og sødlig kant. Lad dig betage af duften, der vækker minder om hyggelige julestunder og familiens traditionelle bagværk. Vores pebernødlæbepromade er skabt til at bringe den festlige glæde direkte til dine læber, og den tilbyder en unik blanding af vinterens krydderier og julemagi. Med hvert påføring forærer denne læbepromade ikke kun pleje, men også en subtil smag af julens charme. <a href="./product.html#pebernoed">Læs mere</a></p></div>
+        </div>
+    
+        <div class="produkt">
+          <img class="produkt-img" src="img/roedkael_produkt.jpg" alt="Julemagi Læbepromade 2">
+          <div class="greenbox"><p>Dyk ned i vinterens fortryllende smagsverden med vores unikke læbepomade beriget med delikat rødkålssmag. Den bløde og nærende formel omfavner dine læber med en subtil kombination af sødme og let syrlighed, der bringer minder om julebordets skønneste retter. Vores læbepromade skaber en sensorisk oplevelse, der forener julehygge med læbepasning. Lad dig forføre af den forfriskende duft og smag, der vækker glæden ved sæsonens festligheder. <a href="./product.html#roedkaal">Læs mere</a></p>
+       </div> 
+    </div>
+
+    <div class="produkt">
+        <img class="produkt-img" src="img/flaeskesteg_produkt.jpg" alt="Julemagi Læbepromade 1">
+        <div class="redbox"><p>Dyk ned i en udsøgt juleoplevelse med vores unikke læbepomade, der omfavner smagen af traditionel flæskesteg. Den blide tekstur smelter på dine læber, mens aromaen af saftig flæskesteg danser i dine sanser. Med en perfekt balance mellem krydderier og sødme bringer denne læbepromade et strejf af julehygge til dit daglige plejeritual. Lad dig forføre af den fortryllende duft og smag, der vækker minder om festlige sammenkomster og familiens varme omkring julebordet.<a href="./product.html#flaeskesteg">Læs mere</a></p></div>
+      </div>
+      </section>
+
+
+
+      
+    <footer>
+        <img src="./img/hooli_ugle_titel.svg" alt="HOOLI" class="footer-logo">
+        <p class="footer-text">Julegade 24 · 2400 Nisseby · tlf: 24 24 24 24 · hooli@mail.dk</p>
+        <p class="footer-text">&copy; Maria Kjærulf · Thomas Hansen · Laura Frank</p>
+    </footer>
+
+</body>
+
+
+
+</html>

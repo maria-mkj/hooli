@@ -1,0 +1,399 @@
+/* Comfortaa */
+
+/* light 300 */ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+/* regular 400 */ @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+/* medium 500 */ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+/* semibold 600 */ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+/* bold 700 */ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+/* Poppins */
+
+/* regular 400 */ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* regular 400 italic */ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+
+
+
+/* nav bar start */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: .5vw 1vw;
+    background: linear-gradient(
+        to right,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green
+        );
+    }
+    
+    .logo {
+        width: 5vw;
+    }
+    
+    .nav-items {
+        display: flex;
+        list-style: none;
+    }
+    
+    .nav-items .nav-link {
+        margin-left: 1vw;
+    }
+    
+    .nav-link {
+        font-family: "Comfortaa";
+        color: white;
+        text-decoration: none;
+    }
+    
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+    
+    .burgerbar, .menu{
+        display: none;
+    }
+    /* nav bar end */
+    
+
+
+
+    /* main content start */
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    /* main content end */
+    
+
+    /* --------SLIDER--------*/
+
+.slider {
+    width: 100vw;
+}
+
+.slider-slides{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.slider-slide{
+    width: 35%;
+    padding: 1vw 5vw 0 0;
+
+}
+
+.slider-buttons{
+    display: none;
+}
+
+
+/* SLIDER SLUT*/
+
+
+/*SLIDE IN TEXT*/
+
+.txt-heading{
+    font-family: Comfortaa;
+    font-size: 2.4vw;
+    color: red;
+    font-weight:bold;
+}
+
+.txt-txt{
+    font-size: 1.1vw;
+}
+
+.slide-in {
+    position: absolute;
+    top: 5vw;
+    left: -100%;
+    width: 50%;
+    padding-left: 19px;
+    transition:left -1s;
+    transition-duration: 4s;
+    background-color: #eae8e100;
+    color: rgb(0, 0, 0);
+}
+
+.slide-in.active {
+    left: 0;
+}
+
+/*SLIDE IN TEXT SLUT*/
+    
+   /* footer start */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3vw;
+    background-color: black;
+    color: white;
+    font-size: 0.7vw;
+    display: flex;
+    align-items: center;
+    padding: .2vw .5vw;
+}
+ 
+.footer-logo{
+    height: 100%;
+}
+
+.footer-text{
+    padding-left: 2vw;
+}
+
+
+
+/* footer end */
+.produkter {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vw;
+
+ 
+  }
+  
+  .produkt {
+    width: 25%;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    }
+  
+  .produkt-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .produkt{
+    text-align: start;
+  }
+
+    .greenbox {
+        border-radius: 8px;
+        background-color: #c8e0d1;
+        border: 1px solid black;
+       padding: .5vw;
+       font-size: 1.1vw;
+    }
+    
+    .redbox{
+
+        border-radius: 8px;
+        background-color: #f1c8c9;
+        border: 1px solid black;
+        padding: .5vw;
+        font-size: 1.1vw;
+
+    }
+
+
+    @media screen and (max-width: 768px) {
+    
+    /* burger menu start */
+    .navbar {
+      display: none;
+    }
+
+    .burgerbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: linear-gradient(
+            to right,
+            red,
+            green,
+            red,
+            green,
+            red,
+            green,
+            red,
+            green,
+            red,
+            green
+        );
+    }
+
+    .burger-logo{
+        width: 20vw;
+        padding: 1vw;
+    }
+
+    .menu-toggle {
+        cursor: pointer;
+        padding: 3vw;
+    }
+      
+    .burger-icon {
+        width: 3.5vw;
+        height: .6vw;
+        background-color: white;
+        margin: .5vw 0;
+    }
+      
+    .menu {
+        display: none;
+    }
+      
+    .active {
+        display: block;
+    }
+
+    .burger-menu{
+        display: flex;
+        align-items: flex-end;
+        flex-flow: column nowrap;
+        width: 100%;
+        background-color: black;
+    }
+
+    .burger-items{
+        display: flex;
+        align-items: flex-end;
+        flex-flow: column nowrap;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        padding-right: 3vw;
+        list-style: none;
+    }
+
+    .burger-link{
+        font-family: "Comfortaa";
+        color: white;
+        text-decoration: none;
+    }
+
+    .burger-link:hover {
+        text-decoration: underline;
+      }
+    
+    /* burger menu end */
+
+
+
+    /* SLIDER START */
+
+    .slider {
+        width: 100vw;
+        height: 200vw;
+    }
+
+    .slider-slides{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .slider-slide{
+        width: 100%;
+        padding: 0;
+
+    }
+
+    .slider-buttons{
+        display: none;
+    }
+
+
+    /* SLIDER SLUT*/
+    
+    /*SLIDE IN TEXT*/
+
+    .txt-heading{
+        font-family: Comfortaa;
+        font-size: 5vw;
+        color: red;
+        font-weight:bold;
+    }
+
+    .txt-txt{
+        font-size: 3vw;
+    }
+
+    .slide-in {
+        position: absolute;
+        top: 135vw;
+        left: -100%;
+        width: 100%;
+        padding: 0 5vw;
+        transition:left -1s;
+        transition-duration: 4s;
+        color: rgb(0, 0, 0);
+    }
+
+    .slide-in.active {
+        left: 0;
+    }
+
+    /*SLIDE IN TEXT SLUT*/
+
+
+    /* PRODUCTS START */
+    .produkter{
+        display: block;
+        width: 100vw;
+        margin-bottom: 15vw;
+    }
+    .produkt{
+        width: 100%;
+        margin: 0;
+        padding: 10vw 1vw;
+    }
+    .redbox, .greenbox{
+        padding: 2vw;
+        font-size: 3vw;
+    }
+    /* PRODUCTS END */
+
+
+
+    /* mobile footer start */
+    footer{
+        height: 7vw;
+        font-size: 1.8vw;
+    }
+ 
+    .footer-logo{
+        display: none;
+    }
+
+    .slider-slides{
+        grid-column: 1/3;
+    }
+
+}

@@ -1,0 +1,302 @@
+/* Comfortaa */
+
+/* light 300 */ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+/* regular 400 */ @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+/* medium 500 */ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+/* semibold 600 */ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+/* bold 700 */ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+/* Poppins */
+
+/* regular 400 */ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* regular 400 italic */ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+
+body{
+    min-height: 100vh;
+}
+
+
+/* nav bar start */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: .5vw 1vw;
+    background: linear-gradient(
+        to right,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green,
+        red,
+        green
+    );
+}
+
+.logo {
+    width: 5vw;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+}
+
+.nav-items .nav-link {
+    margin-left: 1vw;
+}
+
+.nav-link {
+    font-family: "Comfortaa";
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.burgerbar, .menu{
+    display: none;
+}
+/* nav bar end */
+
+/* main content start */
+main{
+    width: 100%;
+}
+.product-banner{
+    display: flex;
+    margin:  0 auto;
+}
+
+.product-sect{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-bottom: 4vw;
+}
+.product-container{
+    width: 31vw;
+    height: 31vw;
+    padding: 1vw;
+    margin-bottom: 5vw;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: .1vw solid black;
+    border-radius: 1vw;
+}
+button{
+    height: 50%;
+    font-size: 2vw;
+    border: .1vw solid black;
+    border-radius: 1vw;
+    background-color: white;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.product-img{
+    height: 80%;
+}
+.card-container1, .card-container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: #f1c8c9;
+    height: 5vw;
+    margin-top: .5vw;
+    border: .1vw solid black;
+    border-radius: 1vw;
+    font-size: 1vw;
+}
+.card-container2{
+    background-color: #c8e0d1;
+}
+/* main content end */
+
+/* footer start */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3vw;
+    background-color: black;
+    color: white;
+    font-size: .7vw;
+    display: flex;
+    align-items: center;
+    padding: .2vw .5vw;
+}
+
+.footer-logo{
+    height: 100%;
+}
+
+p{
+    padding-left: 2vw;
+}
+/* footer end */
+
+@media screen and (max-width: 768px) {
+    
+    /* burger menu start */
+    .navbar {
+      display: none;
+    }
+
+    .burgerbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: linear-gradient(
+            to right,
+            red,
+            green,
+            red,
+            green,
+            red,
+            green,
+            red,
+            green,
+            red,
+            green
+        );
+    }
+
+    .burger-logo{
+        width: 20vw;
+        padding: 1vw;
+    }
+
+    .menu-toggle {
+        cursor: pointer;
+        padding: 3vw;
+    }
+      
+    .burger-icon {
+        width: 3.5vw;
+        height: .6vw;
+        background-color: white;
+        margin: .5vw 0;
+    }
+      
+    .menu {
+        display: none;
+    }
+      
+    .active {
+        display: block;
+    }
+
+    .burger-menu{
+        display: flex;
+        align-items: flex-end;
+        flex-flow: column nowrap;
+        width: 100%;
+        background-color: black;
+    }
+
+    .burger-items{
+        display: flex;
+        align-items: flex-end;
+        flex-flow: column nowrap;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        padding-right: 3vw;
+        list-style: none;
+    }
+
+    .burger-link{
+        font-family: "Comfortaa";
+        color: white;
+        text-decoration: none;
+    }
+
+    .burger-link:hover {
+        text-decoration: underline;
+    }
+    
+    /* burger menu end */
+
+    /* mobile content start */
+    main{
+        margin-bottom: 10vw;
+    }
+
+    .product-banner{
+        width: 100%;
+    }
+
+    .product-container{
+        margin: 0 auto 20vw auto;
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .img-container{
+        border-radius: 3vw;
+    }
+
+    button{
+        font-size: 10vw;
+        border-radius: 3vw;
+    }
+
+    .card-container1, .card-container2{
+        height: 15vw;
+        margin-top: 2vw;
+        font-size: 3vw;
+        border-radius: 3vw;
+    }
+    /* mobile content end */
+
+
+    /* mobile footer start */
+    footer{
+        height: 7vw;
+        font-size: 1.8vw;
+    }
+
+    .footer-logo{
+        display: none;
+    }
+    /* mobile footer end */
+}
